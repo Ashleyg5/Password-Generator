@@ -7,7 +7,7 @@ This is challenge 3 of the bootcamp. I took given HTML and CSS code and created 
 ## Usage
 [Password-Generator](https://ashleyg5.github.io/Password-Generator/)
  
- ![Portfolio Screenshot](https://user-images.githubusercontent.com/118938942/228350711-e507e898-5a30-4f4f-86fc-18f09e142108.png)
+![Password-Generator img](https://user-images.githubusercontent.com/118938942/228973078-52c78ee7-b379-410d-8b84-bac29bffe920.png)
 
 
 ## Credits
