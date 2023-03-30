@@ -4,8 +4,8 @@
  //prepopulated
 //created variable arrays (using const because these variables are set and will not be changed) for charcter length, userChoice, special characters, lowercase characters, uppercase characters, and numbers
 var characterLength = 8;
-var userChoice = ""; //userChoice holds all character types selected by the user
-var specialChar = [`!`,`"`,`#`,`$`,`%`,`&`,`'`,`()`,`*`,`+`,`,`,`-`,`.`,`/`,`:`,`;`,`<`,`=`,`>`,`?`,`@`,`[`,`^`,`_`,`}`,`{`,`|`,`~`];
+var userChoice = []; //userChoice holds all character types selected by the user
+var specialChar = [`!`,`#`,`$`,`%`,`&`,`()`,`*`,`+`,`-`,`.`,`/`,`:`,`;`,`<`,`=`,`>`,`?`,`@`,`[`,`^`,`_`,`}`,`{`,`|`,`~`];
 var lowerCaseChar = [`a`,`b`,`c`,`d`,`e`,`f`,`g`,`h`,`i`,`j`,`k`,`l`,`m`,`n`,`o`,`p`,`q`,`r`,`s`,`t`,`u`,`v`,`w`,`x`,`y`,`z`];
 var upperCaseChar = [`A`,`B`,`C`,`D`,`E`,`F`,`G`,`H`,`I`,`J`,`K`,`L`,`M`,`N`,`O`,`P`,`Q`,`R`,`S`,`T`,`U`,`V`,`W`,`X`,`Y`,`Z`];
 var number = [`1`,`2`,`3`,`4`,`5`,`6`,`7`,`8`,`9`,`0`];
@@ -40,7 +40,7 @@ function generatePassword() { //created generatepassword function, I knew this w
 }
 
 function getPrompts(){ //created getprompts function to hold all prompts inside, all other functions will loop to this function to execute prompts
-  userChoice = "";//set this as empty so it can restart fresh 
+  userChoice = [];//set this as empty so it can restart fresh 
   characterLength = parseInt(prompt("Choose a password length (8 - 128 characters)")); //because characterlength was already declared a variable globally, I dont need to put the const in front of character length // parseInt was used at the beginning to convert strings to intergers ex. if user types "twenty" parseInt will automatically convert the "twenty" to 20.
 
   if (isNaN(characterLength) || characterLength < 8 || characterLength > 128) { //is Not a Number, this will return true or false. After that I insert the or symbol with characterlength being no shorter than 8 and the or symbol again with the character length being no larger than 128.
